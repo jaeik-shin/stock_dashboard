@@ -13,7 +13,7 @@ df['Date'] = pd.to_datetime(df['Date'])
 start_date = st.date_input('Start date', df['date']. min())
 end_date = st.date_input('End date', df['Date'].max())
 
-ranged_df = df[(df['Date'] >= pd.to_datetime(start_date)) &
+ranged_df = df[(df['Date'] >= pd.to_datetime(start_date))
 (df['Date'] <= pd.to_datetime(end_date))]
 st.table(ranged_df)
 
